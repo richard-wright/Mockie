@@ -5,20 +5,23 @@ import org.mockito.Mockito;
 
 public class AnyClass {
 
-  /**
-   * Match any class reference argument.
-   * @return true fot an Class reference.
-   */
-  public static Class<?> anyClass() {
-    return Mockito.argThat(new AnyClassMatcher());
-  }
+    /**
+     * Match any class reference argument.
+     *
+     * @param <T>
+     * @return true for an Class reference.
+     */
+    public static <T> Class<T> anyClass() {
+        return Mockito.argThat(new AnyClassMatcher<>());
+    }
 
 }
 
-class AnyClassMatcher implements ArgumentMatcher<Class<?>> {
+class AnyClassMatcher<T> implements ArgumentMatcher<Class<T>> {
 
-  public boolean matches(final Class<?> aClass) {
-    return true;
-  }
+    @Override
+    public boolean matches(final Class<T> aClass) {
+        return true;
+    }
 
 }
