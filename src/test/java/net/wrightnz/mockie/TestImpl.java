@@ -7,7 +7,7 @@ package net.wrightnz.mockie;
 
 /**
  *
- * @author richard
+ * @author richard wright
  */
 public class TestImpl<T> implements TestInterface<T> {
 
