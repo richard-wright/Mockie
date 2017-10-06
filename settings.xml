@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <settings xsi:schemaLocation='http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd'
           xmlns='http://maven.apache.org/SETTINGS/1.0.0' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
-    
+
+    <servers>
+        <server>
+            <id>bintray-richardwright-Mockie</id>
+            <username>richard-wright</username>
+            <password>02611a32c5e809bb137c792452df97c563e015b1</password>
+        </server>
+    </servers>
     <profiles>
         <profile>
             <repositories>
@@ -30,4 +37,5 @@
     <activeProfiles>
         <activeProfile>bintray</activeProfile>
     </activeProfiles>
+
 </settings>

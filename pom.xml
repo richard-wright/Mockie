@@ -8,6 +8,19 @@
     <artifactId>mockie</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <bintray.package>net.wrightnz.mockie</bintray.package>
+    </properties>
+
+    <distributionManagement>
+        <repository>
+            <id>bintray-richardwright-Mockie</id>
+            <name>richardwright-Mockie</name>
+            <url>https://api.bintray.com/maven/richardwright/Mockie/${bintray.package}/;publish=1</url>
+        </repository>
+    </distributionManagement>
+
     <dependencies>
         <dependency>
             <groupId>org.mockito</groupId>
