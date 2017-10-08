@@ -3,7 +3,9 @@ package net.wrightnz.mockie;
 import org.mockito.ArgumentMatcher;
 import org.mockito.Mockito;
 
-public class AnyClass {
+public final class AnyClass {
+
+    private AnyClass(){ }
 
     /**
      * Match any class reference argument.

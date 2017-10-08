@@ -6,11 +6,12 @@
 package net.wrightnz.mockie;
 
 import static org.junit.Assert.assertEquals;
-import org.junit.Before;
-import org.junit.Test;
 import static org.mockito.ArgumentMatchers.anyString;
 import static org.mockito.BDDMockito.given;
 import static org.mockito.Mockito.mock;
+
+import org.junit.Before;
+import org.junit.Test;
 
 /**
  *
@@ -24,7 +25,7 @@ public class AnyClassTest {
     @Before
     public void before() {
         inf = mock(TestInterface.class);
-        impl = new TestImpl();
+        impl = new TestImpl<>();
     }
 
     @Test
