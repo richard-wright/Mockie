@@ -12,7 +12,7 @@ package net.wrightnz.mockie;
 public class TestImpl<T> implements TestInterface<T> {
 
     @Override
-    public String doSoShit(String arg, Class<T> clazz) {
+    public String doSomeStuff(String arg, Class<T> clazz) {
         return clazz.getSimpleName() + " " + arg;
     }
 
