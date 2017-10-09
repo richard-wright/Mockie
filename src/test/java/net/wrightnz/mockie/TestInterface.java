@@ -12,6 +12,6 @@ package net.wrightnz.mockie;
  */
 public interface TestInterface<T> {
     
-    String doSoShit(String arg, Class<T> clazz);
+    String doSomeStuff(String arg, Class<T> clazz);
     
 }
